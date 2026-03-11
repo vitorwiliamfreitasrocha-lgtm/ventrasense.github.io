@@ -4,7 +4,10 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VentraSense — Dados Precisos, Decisões Certas</title>
-  <meta name="description" content="Estações meteorológicas inteligentes para agronegócio e operações aeronáuticas. Monitoramento em tempo real, alertas automáticos e dashboard profissional."/>
+  <meta name="description" content="Estações meteorológicas inteligentes para o agronegócio e operações aeronáuticas. Monitoramento em tempo real, alertas automáticos e dashboard profissional."/>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="shortcut icon" href="favicon.svg"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
   <style>
@@ -22,9 +25,7 @@
       --card:     #0b1929;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--bg);
       color: var(--text);
@@ -32,16 +33,13 @@
       font-weight: 300;
       overflow-x: hidden;
     }
-
     /* ── SCROLLBAR ── */
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--cyan-dim); border-radius: 2px; }
-
     /* ── CURSOR ── */
     body { cursor: crosshair; }
     a, button { cursor: pointer; }
-
     /* ── NOISE OVERLAY ── */
     body::before {
       content: '';
@@ -49,7 +47,6 @@
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
       pointer-events: none; opacity: 0.4;
     }
-
     /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -106,7 +103,6 @@
     }
     .nav-dashboard:hover { background: var(--green) !important; color: var(--bg) !important; }
     .nav-hamburger { display: none; background: none; border: none; color: var(--cyan); font-size: 1.5rem; }
-
     /* ── HERO ── */
     #hero {
       position: relative; min-height: 100vh;
@@ -186,7 +182,6 @@
       transition: border-color 0.2s, color 0.2s;
     }
     .btn-secondary:hover { border-color: var(--cyan); color: var(--cyan); }
-
     .hero-dashboard-box {
       position: relative; z-index: 1;
       margin-top: 36px;
@@ -244,14 +239,12 @@
       font-size: 0.7rem; letter-spacing: 2px; color: var(--text-dim);
       text-transform: uppercase; margin-top: 4px;
     }
-
     /* ── WAVE DIVIDER ── */
     .wave-divider {
       height: 2px; width: 100%;
       background: linear-gradient(90deg, transparent, var(--cyan), var(--green), transparent);
       opacity: 0.3; margin: 0;
     }
-
     /* ── SECTIONS ── */
     section { position: relative; z-index: 1; }
     .section-inner { max-width: 1200px; margin: 0 auto; padding: 100px 5vw; }
@@ -269,7 +262,6 @@
     .section-desc {
       font-size: 1rem; color: var(--text-dim); max-width: 560px; line-height: 1.8;
     }
-
     /* ── PRODUTOS ── */
     #produtos { background: var(--bg2); }
     .produtos-grid {
@@ -325,7 +317,6 @@
       font-family: 'Share Tech Mono', monospace;
       pointer-events: none; user-select: none;
     }
-
     /* ── VIDEO ── */
     #video { background: var(--bg); }
     .video-wrapper {
@@ -373,7 +364,6 @@
     .video-corner.tr { top: 12px; right: 12px; border-top: 2px solid var(--cyan); border-right: 2px solid var(--cyan); }
     .video-corner.bl { bottom: 12px; left: 12px; border-bottom: 2px solid var(--cyan); border-left: 2px solid var(--cyan); }
     .video-corner.br { bottom: 12px; right: 12px; border-bottom: 2px solid var(--cyan); border-right: 2px solid var(--cyan); }
-
     /* ── DIFERENCIAIS ── */
     #diferenciais { background: var(--bg3); }
     .diferenciais-grid {
@@ -393,7 +383,6 @@
       margin-bottom: 12px; letter-spacing: 0.5px;
     }
     .diferencial-desc { font-size: 0.9rem; color: var(--text-dim); line-height: 1.7; }
-
     /* ── PLANOS ── */
     #planos { background: var(--bg2); }
     .planos-grid {
@@ -450,7 +439,6 @@
     .btn-plano:hover, .plano-card.destaque .btn-plano {
       background: var(--cyan); color: var(--bg); border-color: var(--cyan);
     }
-
     /* ── LOJA / CARRINHO ── */
     #loja { background: var(--bg); }
     .loja-grid {
@@ -483,7 +471,6 @@
     }
     .btn-add:hover { background: var(--cyan); color: var(--bg); }
     .btn-add.added { background: var(--green-dim); border-color: var(--green); color: var(--green); }
-
     /* CARRINHO */
     .carrinho {
       background: var(--card); border: 1px solid var(--border);
@@ -548,7 +535,6 @@
     }
     .btn-checkout:hover { opacity: 0.85; }
     .btn-checkout:disabled { opacity: 0.3; cursor: not-allowed; }
-
     /* LOGIN MODAL */
     .modal-overlay {
       display: none; position: fixed; inset: 0; z-index: 200;
@@ -610,7 +596,6 @@
       font-size: 0.8rem; color: var(--text-dim);
     }
     .form-footer a { color: var(--cyan); text-decoration: none; }
-
     /* ── CONTATO ── */
     #contato { background: var(--bg3); }
     .contato-grid {
@@ -650,7 +635,6 @@
       cursor: pointer; transition: all 0.2s; align-self: flex-start;
     }
     .btn-enviar:hover { background: var(--cyan); color: var(--bg); }
-
     /* ── FOOTER ── */
     footer {
       background: var(--bg); border-top: 1px solid var(--border);
@@ -691,7 +675,6 @@
       font-size: 0.8rem; letter-spacing: 4px; color: var(--text-dim);
     }
     .footer-logo-text span { color: var(--cyan); }
-
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
@@ -702,7 +685,6 @@
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
-
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .nav-links { display: none; }
@@ -727,7 +709,6 @@
   </style>
 </head>
 <body>
-
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">
@@ -761,7 +742,6 @@
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Menu">☰</button>
 </nav>
-
 <!-- HERO -->
 <section id="hero">
   <div class="hero-grid"></div>
@@ -811,16 +791,13 @@
     </div>
   </div>
 </section>
-
 <div class="wave-divider"></div>
-
 <!-- PRODUTOS -->
 <section id="produtos">
   <div class="section-inner">
     <div class="section-label">// SOLUÇÕES</div>
     <h2 class="section-title">Duas estações.<br/>Um único padrão de excelência.</h2>
     <p class="section-desc">Desenvolvidas para os desafios reais do campo e do ar, com hardware robusto e software profissional.</p>
-
     <div class="produtos-grid reveal">
       <!-- AGRO -->
       <div class="produto-card agro">
@@ -846,7 +823,6 @@
         </div>
         <div class="produto-bg-num">A</div>
       </div>
-
       <!-- AERO -->
       <div class="produto-card aero">
         <span class="produto-icon">✈️</span>
@@ -874,7 +850,6 @@
     </div>
   </div>
 </section>
-
 <!-- VIDEO -->
 <section id="video">
   <div class="section-inner">
@@ -895,13 +870,11 @@
     </div>
   </div>
 </section>
-
 <!-- DIFERENCIAIS -->
 <section id="diferenciais">
   <div class="section-inner">
     <div class="section-label">// POR QUE VENTRASENSE</div>
     <h2 class="section-title">Tecnologia que<br/>trabalha por você</h2>
-
     <div class="diferenciais-grid reveal">
       <div class="diferencial-item">
         <span class="diferencial-icon">⚡</span>
@@ -936,14 +909,12 @@
     </div>
   </div>
 </section>
-
 <!-- PLANOS -->
 <section id="planos">
   <div class="section-inner">
     <div class="section-label">// PLANOS</div>
     <h2 class="section-title">Escolha seu plano</h2>
     <p class="section-desc">Hardware + acesso ao dashboard. Tudo incluso, sem surpresas na fatura.</p>
-
     <div class="planos-grid reveal">
       <div class="plano-card">
         <div class="plano-nome">Starter</div>
@@ -959,7 +930,6 @@
         </ul>
         <a href="#loja" class="btn-plano">Escolher Starter</a>
       </div>
-
       <div class="plano-card destaque">
         <div class="plano-destaque-tag">MAIS POPULAR</div>
         <div class="plano-nome">Pro</div>
@@ -975,7 +945,6 @@
         </ul>
         <a href="#loja" class="btn-plano">Escolher Pro</a>
       </div>
-
       <div class="plano-card">
         <div class="plano-nome">Enterprise</div>
         <div class="plano-preco">Sob<span> consulta</span></div>
@@ -993,14 +962,12 @@
     </div>
   </div>
 </section>
-
 <!-- LOJA -->
 <section id="loja">
   <div class="section-inner">
     <div class="section-label">// LOJA</div>
     <h2 class="section-title">Monte seu kit</h2>
     <p class="section-desc">Selecione os itens desejados e finalize seu pedido. Nossa equipe entrará em contato para confirmar instalação.</p>
-
     <div class="loja-grid">
       <div class="loja-produtos" id="lojaProdutos">
         <div class="loja-item">
@@ -1014,7 +981,6 @@
           </div>
           <button class="btn-add" onclick="addToCart(this,'VentraSense Agro Hardware','R$ 800','hardware')">+ ADICIONAR</button>
         </div>
-
         <div class="loja-item">
           <span class="loja-item-icon">✈️</span>
           <div class="loja-item-info">
@@ -1026,7 +992,6 @@
           </div>
           <button class="btn-add" onclick="addToCart(this,'VentraSense Aero Hardware','R$ 1.200','hardware')">+ ADICIONAR</button>
         </div>
-
         <div class="loja-item">
           <span class="loja-item-icon">📊</span>
           <div class="loja-item-info">
@@ -1038,7 +1003,6 @@
           </div>
           <button class="btn-add" onclick="addToCart(this,'Plano Starter','R$ 79/mês','plano')">+ ADICIONAR</button>
         </div>
-
         <div class="loja-item">
           <span class="loja-item-icon">🚀</span>
           <div class="loja-item-info">
@@ -1050,7 +1014,6 @@
           </div>
           <button class="btn-add" onclick="addToCart(this,'Plano Pro','R$ 129/mês','plano')">+ ADICIONAR</button>
         </div>
-
         <div class="loja-item">
           <span class="loja-item-icon">🔧</span>
           <div class="loja-item-info">
@@ -1063,7 +1026,6 @@
           <button class="btn-add" onclick="addToCart(this,'Instalação e Configuração','R$ 350','servico')">+ ADICIONAR</button>
         </div>
       </div>
-
       <!-- CARRINHO -->
       <div class="carrinho">
         <div class="carrinho-header">
@@ -1089,7 +1051,6 @@
     </div>
   </div>
 </section>
-
 <!-- CONTATO -->
 <section id="contato">
   <div class="section-inner">
@@ -1130,7 +1091,6 @@
     </div>
   </div>
 </section>
-
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
@@ -1161,7 +1121,6 @@
     <span class="footer-copy">ventrasense.com.br</span>
   </div>
 </footer>
-
 <!-- MODAL LOGIN/CHECKOUT -->
 <div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
   <div class="modal">
@@ -1226,20 +1185,17 @@
     </div>
   </div>
 </div>
-
 <script>
   // NAV HAMBURGER
   document.getElementById('hamburger').addEventListener('click', () => {
     document.getElementById('navLinks').classList.toggle('open');
   });
-
   // SCROLL REVEAL
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1 });
   reveals.forEach(r => observer.observe(r));
-
   // MODAL
   function openModal(e, type) {
     e.preventDefault();
@@ -1267,7 +1223,6 @@
   function goToDashboard() {
     window.open('https://estacao-meteorologica.onrender.com', '_blank');
   }
-
   // CARRINHO
   let cart = [];
   function addToCart(btn, name, price, type) {
@@ -1280,15 +1235,9 @@
   function removeFromCart(idx) {
     const item = cart[idx];
     cart.splice(idx, 1);
-    // re-enable button
-    document.querySelectorAll('.btn-add').forEach(btn => {
-      if(btn.textContent === '✓ ADICIONADO') {
-        // find by closest item name
-      }
-    });
     renderCart();
-    // Re-enable all add buttons that match
-    document.querySelectorAll('.btn-add.added').forEach((btn, i) => {
+    // Re-enable add button for removed item
+    document.querySelectorAll('.btn-add.added').forEach((btn) => {
       const itemName = btn.closest('.loja-item').querySelector('.loja-item-name').textContent;
       if(itemName === item.name) {
         btn.classList.remove('added');
@@ -1304,12 +1253,8 @@
     const mensalidadeEl = document.getElementById('cartMensalidade');
     const mensalidadeValEl = document.getElementById('cartMensalidadeVal');
     const btnCheckout = document.getElementById('btnCheckout');
-
     badge.textContent = cart.length;
-
-    // Clear
     Array.from(container.querySelectorAll('.carrinho-item')).forEach(e => e.remove());
-
     if(cart.length === 0) {
       empty.style.display = 'block';
       totalEl.textContent = 'R$ 0';
@@ -1317,13 +1262,10 @@
       btnCheckout.disabled = true;
       return;
     }
-
     empty.style.display = 'none';
     btnCheckout.disabled = false;
-
     let totalHardware = 0;
     let mensalidades = [];
-
     cart.forEach((item, idx) => {
       const div = document.createElement('div');
       div.className = 'carrinho-item';
@@ -1333,7 +1275,6 @@
         <button class="carrinho-item-remove" onclick="removeFromCart(${idx})">✕</button>
       `;
       container.appendChild(div);
-
       if(item.type !== 'plano') {
         const num = parseInt(item.price.replace(/[^\d]/g,''));
         totalHardware += num;
@@ -1341,7 +1282,6 @@
         mensalidades.push(item.price);
       }
     });
-
     totalEl.textContent = totalHardware > 0 ? `R$ ${totalHardware.toLocaleString('pt-BR')}` : 'R$ 0';
     if(mensalidades.length > 0) {
       mensalidadeEl.style.display = 'block';
@@ -1350,7 +1290,6 @@
       mensalidadeEl.style.display = 'none';
     }
   }
-
   // ESC to close modal
   document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
 </script>

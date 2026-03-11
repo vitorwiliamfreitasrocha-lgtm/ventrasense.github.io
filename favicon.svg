@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fundo escuro com borda ciano sutil -->
+  <rect width="64" height="64" rx="10" fill="#060c14"/>
+  <rect width="64" height="64" rx="10" fill="none" stroke="#00c8ff" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- V branco -->
+  <text x="5" y="47" font-family="'Exo 2', Arial Black, sans-serif" font-weight="900" font-size="38" fill="#ffffff" letter-spacing="-2">V</text>
+
+  <!-- S ciano -->
+  <text x="31" y="47" font-family="'Exo 2', Arial Black, sans-serif" font-weight="900" font-size="38" fill="#00c8ff" letter-spacing="-2">S</text>
+</svg>

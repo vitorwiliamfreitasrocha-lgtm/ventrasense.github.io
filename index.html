@@ -190,6 +190,12 @@
     .produto-card.aero .produto-features li::before { color: var(--cyan); }
     .produto-price { font-family: 'Share Tech Mono', monospace; font-size: 0.75rem; color: var(--text-dim); letter-spacing: 1px; }
     .produto-price strong { font-size: 1.4rem; color: #fff; margin-right: 4px; }
+    .produto-note {
+      margin-top: 10px;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      opacity: 0.85;
+    }
     .produto-bg-num { position: absolute; right: -20px; bottom: -40px; font-size: 12rem; font-weight: 900; opacity: 0.02; color: #fff; font-family: 'Share Tech Mono', monospace; pointer-events: none; user-select: none; }
     #video { background: var(--bg); }
     .video-wrapper { margin-top: 60px; position: relative; border: 1px solid var(--border); background: var(--card); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; overflow: hidden; }
@@ -336,13 +342,14 @@
     <li><a href="#produtos">Produtos</a></li>
     <li><a href="#diferenciais">Diferenciais</a></li>
     <li><a href="#planos">Planos</a></li>
-    <li><a href="#loja">Loja</a></li>
+    <li><a href="#loja">Proposta</a></li>
     <li><a href="#contato">Contato</a></li>
     <li><a href="https://dashboard.ventrasense.com.br" target="_blank" class="nav-dashboard">⬡ DASHBOARD</a></li>
     <li><a href="#" class="nav-cta" onclick="openModal(event,'login')">Área do Cliente</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Menu">☰</button>
 </nav>
+
 <section id="hero">
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
@@ -352,7 +359,7 @@
     <p class="hero-sub">Estações meteorológicas profissionais para o agronegócio e operações aeronáuticas. Monitoramento em tempo real, alertas automáticos e dashboard na palma da mão.</p>
     <div class="hero-btns">
       <a href="#produtos" class="btn-primary">Conheça as Estações</a>
-      <a href="#loja" class="btn-secondary">Montar meu Kit</a>
+      <a href="#loja" class="btn-secondary">Solicitar Proposta</a>
     </div>
     <div class="hero-dashboard-box">
       <div class="hero-dashboard-pulse"></div>
@@ -370,7 +377,9 @@
     <div class="hero-stat"><div class="hero-stat-num">∞</div><div class="hero-stat-label">Estações</div></div>
   </div>
 </section>
+
 <div class="wave-divider"></div>
+
 <section id="produtos">
   <div class="section-inner">
     <div class="section-label">// SOLUÇÕES</div>
@@ -390,9 +399,10 @@
           <li>Dashboard web acessível de qualquer lugar</li>
           <li>Histórico de 30 dias com exportação</li>
           <li>Alertas por e-mail automáticos</li>
-          <li>Registro em cartão SD local</li>
+          <li>Instalação inclusa no valor da estação</li>
         </ul>
-        <div class="produto-price">A partir de <strong>R$ 800</strong> + R$ 79/mês</div>
+        <div class="produto-price"><strong>R$ 7.000</strong> + R$ 149/mês</div>
+        <div class="produto-note">* Condição especial de entrada para primeiros clientes</div>
         <div class="produto-bg-num">A</div>
       </div>
       <div class="produto-card aero">
@@ -408,14 +418,16 @@
           <li>Indicador de status em tempo real</li>
           <li>Alertas de condições adversas ao voo</li>
           <li>Dashboard com interface aeronáutica</li>
-          <li>Suporte técnico dedicado</li>
+          <li>Instalação inclusa no valor da estação</li>
         </ul>
-        <div class="produto-price">A partir de <strong>R$ 1.200</strong> + R$ 129/mês</div>
+        <div class="produto-price"><strong>R$ 9.000</strong> + R$ 349/mês</div>
+        <div class="produto-note">* Condição especial de entrada para primeiros clientes</div>
         <div class="produto-bg-num">B</div>
       </div>
     </div>
   </div>
 </section>
+
 <section id="video">
   <div class="section-inner">
     <div class="section-label">// EM AÇÃO</div>
@@ -431,6 +443,7 @@
     </div>
   </div>
 </section>
+
 <section id="diferenciais">
   <div class="section-inner">
     <div class="section-label">// POR QUE VENTRASENSE</div>
@@ -439,51 +452,54 @@
       <div class="diferencial-item"><span class="diferencial-icon">⚡</span><div class="diferencial-title">Atualização a cada 10s</div><p class="diferencial-desc">Dados enviados continuamente para a nuvem. Você vê o que está acontecendo agora, sem atraso.</p></div>
       <div class="diferencial-item"><span class="diferencial-icon">🔔</span><div class="diferencial-title">Alertas Inteligentes</div><p class="diferencial-desc">Geada, vento forte, chuva intensa, nevoeiro. Receba alertas por e-mail antes que o problema chegue.</p></div>
       <div class="diferencial-item"><span class="diferencial-icon">☁️</span><div class="diferencial-title">100% na Nuvem</div><p class="diferencial-desc">Servidor dedicado online 24h por dia. Acesse o dashboard de qualquer celular, tablet ou computador.</p></div>
-      <div class="diferencial-item"><span class="diferencial-icon">📡</span><div class="diferencial-title">Instalação Simples</div><p class="diferencial-desc">Conecta ao WiFi da propriedade e começa a enviar dados. Sem configurações complexas.</p></div>
+      <div class="diferencial-item"><span class="diferencial-icon">📡</span><div class="diferencial-title">Instalação Simplificada</div><p class="diferencial-desc">Nossa equipe orienta o processo e valida os detalhes da instalação conforme a realidade de cada operação.</p></div>
       <div class="diferencial-item"><span class="diferencial-icon">🎙️</span><div class="diferencial-title">ATIS por Voz</div><p class="diferencial-desc">Para aeródromos: informações meteorológicas lidas automaticamente em português. Toque um botão e ouça.</p></div>
       <div class="diferencial-item"><span class="diferencial-icon">🛡️</span><div class="diferencial-title">Hardware Robusto</div><p class="diferencial-desc">Sensores calibrados, protegidos e testados para o ambiente externo. Alimentação estabilizada contra surtos.</p></div>
     </div>
   </div>
 </section>
+
 <section id="planos">
   <div class="section-inner">
     <div class="section-label">// PLANOS</div>
     <h2 class="section-title">Escolha seu plano</h2>
-    <p class="section-desc">Hardware + acesso ao dashboard. Tudo incluso, sem surpresas na fatura.</p>
+    <p class="section-desc">Hardware com instalação inclusa + acesso ao dashboard. Tudo organizado para uma operação simples e profissional.</p>
     <div class="planos-grid reveal">
-      <div class="plano-card">
-        <div class="plano-nome">Starter</div>
-        <div class="plano-preco">R$ 79<span>/mês</span></div>
-        <div class="plano-hardware">+ Hardware Agro a partir de R$ 800</div>
-        <ul class="plano-features">
-          <li><span class="check">✓</span> Dashboard web completo</li>
-          <li><span class="check">✓</span> Alertas por e-mail</li>
-          <li><span class="check">✓</span> Histórico 30 dias</li>
-          <li><span class="check">✓</span> 1 estação</li>
-          <li><span class="x">—</span> ATIS por voz</li>
-          <li><span class="x">—</span> Suporte prioritário</li>
-        </ul>
-        <a href="#loja" class="btn-plano">Escolher Starter</a>
-      </div>
       <div class="plano-card destaque">
-        <div class="plano-destaque-tag">MAIS POPULAR</div>
-        <div class="plano-nome">Pro</div>
-        <div class="plano-preco">R$ 129<span>/mês</span></div>
-        <div class="plano-hardware">+ Hardware Aero a partir de R$ 1.200</div>
+        <div class="plano-destaque-tag">AGRO</div>
+        <div class="plano-nome">VentraSense Agro</div>
+        <div class="plano-preco">R$ 149<span>/mês</span></div>
+        <div class="plano-hardware">Hardware + instalação: R$ 7.000</div>
         <ul class="plano-features">
           <li><span class="check">✓</span> Dashboard web completo</li>
-          <li><span class="check">✓</span> Alertas por e-mail</li>
-          <li><span class="check">✓</span> Histórico 30 dias</li>
-          <li><span class="check">✓</span> 1 estação</li>
+          <li><span class="check">✓</span> Alertas automáticos</li>
+          <li><span class="check">✓</span> Histórico de dados</li>
+          <li><span class="check">✓</span> Monitoramento 24/7</li>
+          <li><span class="check">✓</span> 1 estação incluída</li>
+          <li><span class="x">—</span> ATIS por voz</li>
+        </ul>
+        <a href="#loja" class="btn-plano">Escolher Agro</a>
+      </div>
+
+      <div class="plano-card">
+        <div class="plano-nome">VentraSense Aero</div>
+        <div class="plano-preco">R$ 349<span>/mês</span></div>
+        <div class="plano-hardware">Hardware + instalação: R$ 9.000</div>
+        <ul class="plano-features">
+          <li><span class="check">✓</span> Dashboard web completo</li>
+          <li><span class="check">✓</span> Alertas operacionais</li>
+          <li><span class="check">✓</span> Histórico de dados</li>
+          <li><span class="check">✓</span> Monitoramento 24/7</li>
           <li><span class="check">✓</span> ATIS por voz</li>
           <li><span class="check">✓</span> Suporte prioritário</li>
         </ul>
-        <a href="#loja" class="btn-plano">Escolher Pro</a>
+        <a href="#loja" class="btn-plano">Escolher Aero</a>
       </div>
+
       <div class="plano-card">
         <div class="plano-nome">Enterprise</div>
         <div class="plano-preco">Sob<span> consulta</span></div>
-        <div class="plano-hardware">Múltiplas estações / cooperativas</div>
+        <div class="plano-hardware">Múltiplas estações / projetos personalizados</div>
         <ul class="plano-features">
           <li><span class="check">✓</span> Estações ilimitadas</li>
           <li><span class="check">✓</span> Dashboard unificado</li>
@@ -497,31 +513,68 @@
     </div>
   </div>
 </section>
+
 <section id="loja">
   <div class="section-inner">
-    <div class="section-label">// LOJA</div>
-    <h2 class="section-title">Monte seu kit</h2>
-    <p class="section-desc">Selecione os itens desejados e finalize seu pedido. Nossa equipe entrará em contato para confirmar instalação.</p>
+    <div class="section-label">// PROPOSTA</div>
+    <h2 class="section-title">Solicite sua proposta</h2>
+    <p class="section-desc">Selecione a estação e o plano desejado. Nossa equipe entrará em contato para confirmar os detalhes da instalação conforme sua localidade.</p>
     <div class="loja-grid">
       <div class="loja-produtos" id="lojaProdutos">
-        <div class="loja-item"><span class="loja-item-icon">🌱</span><div class="loja-item-info"><div class="loja-item-name">VentraSense Agro — Hardware</div><div class="loja-item-desc">Estação completa: temp/umidade, vento, chuva, RTC, microSD + instalação</div></div><div class="loja-item-price">R$ 800<small>hardware único</small></div><button class="btn-add" onclick="addToCart(this,'VentraSense Agro Hardware','R$ 800','hardware')">+ ADICIONAR</button></div>
-        <div class="loja-item"><span class="loja-item-icon">✈️</span><div class="loja-item-info"><div class="loja-item-name">VentraSense Aero — Hardware</div><div class="loja-item-desc">Estação completa para aeródromo com todos os sensores + ATIS + instalação</div></div><div class="loja-item-price">R$ 1.200<small>hardware único</small></div><button class="btn-add" onclick="addToCart(this,'VentraSense Aero Hardware','R$ 1.200','hardware')">+ ADICIONAR</button></div>
-        <div class="loja-item"><span class="loja-item-icon">📊</span><div class="loja-item-info"><div class="loja-item-name">Plano Starter — Dashboard</div><div class="loja-item-desc">Acesso completo ao dashboard, alertas e histórico. Cobrado mensalmente.</div></div><div class="loja-item-price">R$ 79<small>/mês — recorrente</small></div><button class="btn-add" onclick="addToCart(this,'Plano Starter','R$ 79/mês','plano')">+ ADICIONAR</button></div>
-        <div class="loja-item"><span class="loja-item-icon">🚀</span><div class="loja-item-info"><div class="loja-item-name">Plano Pro — Dashboard + ATIS</div><div class="loja-item-desc">Tudo do Starter + ATIS por voz e suporte prioritário. Para aeródromos.</div></div><div class="loja-item-price">R$ 129<small>/mês — recorrente</small></div><button class="btn-add" onclick="addToCart(this,'Plano Pro','R$ 129/mês','plano')">+ ADICIONAR</button></div>
-        <div class="loja-item"><span class="loja-item-icon">🔧</span><div class="loja-item-info"><div class="loja-item-name">Instalação e Configuração</div><div class="loja-item-desc">Visita técnica, instalação dos sensores e configuração completa do sistema.</div></div><div class="loja-item-price">R$ 350<small>serviço único</small></div><button class="btn-add" onclick="addToCart(this,'Instalação e Configuração','R$ 350','servico')">+ ADICIONAR</button></div>
+        <div class="loja-item">
+          <span class="loja-item-icon">🌱</span>
+          <div class="loja-item-info">
+            <div class="loja-item-name">VentraSense Agro — Estação + Instalação</div>
+            <div class="loja-item-desc">Estação completa com sensores, montagem, configuração e instalação inclusa</div>
+          </div>
+          <div class="loja-item-price">R$ 7.000<small>pagamento único</small></div>
+          <button class="btn-add" onclick="addToCart(this,'VentraSense Agro — Estação + Instalação','R$ 7.000','hardware')">+ ADICIONAR</button>
+        </div>
+
+        <div class="loja-item">
+          <span class="loja-item-icon">✈️</span>
+          <div class="loja-item-info">
+            <div class="loja-item-name">VentraSense Aero — Estação + Instalação</div>
+            <div class="loja-item-desc">Estação completa para aeródromo com sensores, ATIS e instalação inclusa</div>
+          </div>
+          <div class="loja-item-price">R$ 9.000<small>pagamento único</small></div>
+          <button class="btn-add" onclick="addToCart(this,'VentraSense Aero — Estação + Instalação','R$ 9.000','hardware')">+ ADICIONAR</button>
+        </div>
+
+        <div class="loja-item">
+          <span class="loja-item-icon">📊</span>
+          <div class="loja-item-info">
+            <div class="loja-item-name">Plano Agro — Dashboard</div>
+            <div class="loja-item-desc">Acesso ao dashboard, alertas e histórico. Cobrado mensalmente.</div>
+          </div>
+          <div class="loja-item-price">R$ 149<small>/mês — recorrente</small></div>
+          <button class="btn-add" onclick="addToCart(this,'Plano Agro','R$ 149/mês','plano')">+ ADICIONAR</button>
+        </div>
+
+        <div class="loja-item">
+          <span class="loja-item-icon">🚀</span>
+          <div class="loja-item-info">
+            <div class="loja-item-name">Plano Aero — Dashboard + ATIS</div>
+            <div class="loja-item-desc">Acesso ao dashboard, alertas, histórico, ATIS por voz e suporte prioritário.</div>
+          </div>
+          <div class="loja-item-price">R$ 349<small>/mês — recorrente</small></div>
+          <button class="btn-add" onclick="addToCart(this,'Plano Aero','R$ 349/mês','plano')">+ ADICIONAR</button>
+        </div>
       </div>
+
       <div class="carrinho">
-        <div class="carrinho-header"><span>// CARRINHO</span><div class="carrinho-badge" id="cartBadge">0</div></div>
+        <div class="carrinho-header"><span>// RESUMO</span><div class="carrinho-badge" id="cartBadge">0</div></div>
         <div class="carrinho-items" id="cartItems"><div class="carrinho-empty" id="cartEmpty">Nenhum item adicionado</div></div>
         <div class="carrinho-footer">
-          <div class="carrinho-total"><span class="carrinho-total-label">TOTAL HARDWARE</span><span class="carrinho-total-val" id="cartTotal">R$ 0</span></div>
+          <div class="carrinho-total"><span class="carrinho-total-label">TOTAL ÚNICO</span><span class="carrinho-total-val" id="cartTotal">R$ 0</span></div>
           <div class="carrinho-mensalidade" id="cartMensalidade" style="display:none"><span id="cartMensalidadeVal"></span></div>
-          <button class="btn-checkout" id="btnCheckout" disabled onclick="openModal(event,'checkout')">FINALIZAR PEDIDO</button>
+          <button class="btn-checkout" id="btnCheckout" disabled onclick="openModal(event,'checkout')">SOLICITAR CONTATO</button>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <section id="contato">
   <div class="section-inner">
     <div class="section-label">// CONTATO</div>
@@ -543,6 +596,7 @@
     </div>
   </div>
 </section>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -555,7 +609,7 @@
         <li><a href="#produtos">VentraSense Agro</a></li>
         <li><a href="#produtos">VentraSense Aero</a></li>
         <li><a href="#planos">Planos e Preços</a></li>
-        <li><a href="#loja">Loja</a></li>
+        <li><a href="#loja">Solicitar Proposta</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -573,6 +627,7 @@
     <span class="footer-copy">ventrasense.com.br</span>
   </div>
 </footer>
+
 <div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
   <div class="modal">
     <button class="modal-close" onclick="closeModal()">✕</button>
@@ -597,31 +652,138 @@
     </div>
     <div id="modalCheckoutContent" style="display:none">
       <div class="modal-title">// PEDIDO</div>
-      <div class="modal-heading">Finalizar Pedido</div>
-      <p style="color:var(--text-dim);font-size:0.9rem;line-height:1.7;margin-bottom:24px">Após confirmar, nossa equipe entrará em contato em até 24h para agendar a instalação e processar o pagamento.</p>
+      <div class="modal-heading">Solicitar Contato</div>
+      <p style="color:var(--text-dim);font-size:0.9rem;line-height:1.7;margin-bottom:24px">Após confirmar, nossa equipe entrará em contato em até 24h para validar sua localidade, alinhar a instalação e processar a proposta comercial.</p>
       <div class="form-group"><label class="form-label">Nome completo</label><input type="text" class="form-input" placeholder="Seu nome"/></div>
       <div class="form-group"><label class="form-label">E-mail</label><input type="email" class="form-input" placeholder="seu@email.com"/></div>
       <div class="form-group"><label class="form-label">WhatsApp</label><input type="text" class="form-input" placeholder="(00) 00000-0000"/></div>
       <div class="form-group"><label class="form-label">Localidade / Propriedade</label><input type="text" class="form-input" placeholder="Cidade - Estado"/></div>
-      <button class="btn-login">CONFIRMAR PEDIDO</button>
+      <button class="btn-login">CONFIRMAR SOLICITAÇÃO</button>
     </div>
   </div>
 </div>
+
 <script>
-  document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
   const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+
   reveals.forEach(r => observer.observe(r));
-  function openModal(e, type) { e.preventDefault(); document.getElementById('modalOverlay').classList.add('open'); if(type==='checkout'){document.getElementById('modalLoginContent').style.display='none';document.getElementById('modalCheckoutContent').style.display='block';}else{document.getElementById('modalLoginContent').style.display='block';document.getElementById('modalCheckoutContent').style.display='none';} }
-  function closeModal() { document.getElementById('modalOverlay').classList.remove('open'); }
-  function closeModalOutside(e) { if(e.target===document.getElementById('modalOverlay')) closeModal(); }
-  function switchTab(btn,tab) { document.querySelectorAll('.form-tab').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); document.getElementById('tabLogin').style.display=tab==='login'?'block':'none'; document.getElementById('tabCadastro').style.display=tab==='cadastro'?'block':'none'; }
-  function goToDashboard() { window.open('https://estacao-meteorologica.onrender.com','_blank'); }
-  let cart=[];
-  function addToCart(btn,name,price,type){if(btn.classList.contains('added'))return;btn.classList.add('added');btn.textContent='✓ ADICIONADO';cart.push({name,price,type});renderCart();}
-  function removeFromCart(idx){const item=cart[idx];cart.splice(idx,1);renderCart();document.querySelectorAll('.btn-add.added').forEach((btn)=>{const itemName=btn.closest('.loja-item').querySelector('.loja-item-name').textContent;if(itemName===item.name){btn.classList.remove('added');btn.textContent='+ ADICIONAR';}});}
-  function renderCart(){const container=document.getElementById('cartItems');const empty=document.getElementById('cartEmpty');const badge=document.getElementById('cartBadge');const totalEl=document.getElementById('cartTotal');const mensalidadeEl=document.getElementById('cartMensalidade');const mensalidadeValEl=document.getElementById('cartMensalidadeVal');const btnCheckout=document.getElementById('btnCheckout');badge.textContent=cart.length;Array.from(container.querySelectorAll('.carrinho-item')).forEach(e=>e.remove());if(cart.length===0){empty.style.display='block';totalEl.textContent='R$ 0';mensalidadeEl.style.display='none';btnCheckout.disabled=true;return;}empty.style.display='none';btnCheckout.disabled=false;let totalHardware=0;let mensalidades=[];cart.forEach((item,idx)=>{const div=document.createElement('div');div.className='carrinho-item';div.innerHTML=`<span class="carrinho-item-name">${item.name}</span><span class="carrinho-item-price">${item.price}</span><button class="carrinho-item-remove" onclick="removeFromCart(${idx})">✕</button>`;container.appendChild(div);if(item.type!=='plano'){const num=parseInt(item.price.replace(/[^\d]/g,''));totalHardware+=num;}else{mensalidades.push(item.price);}});totalEl.textContent=totalHardware>0?`R$ ${totalHardware.toLocaleString('pt-BR')}`:'R$ 0';if(mensalidades.length>0){mensalidadeEl.style.display='block';mensalidadeValEl.textContent=`+ ${mensalidades.join(' + ')} (recorrente)`;}else{mensalidadeEl.style.display='none';}}
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
+  function openModal(e, type) {
+    e.preventDefault();
+    document.getElementById('modalOverlay').classList.add('open');
+    if (type === 'checkout') {
+      document.getElementById('modalLoginContent').style.display = 'none';
+      document.getElementById('modalCheckoutContent').style.display = 'block';
+    } else {
+      document.getElementById('modalLoginContent').style.display = 'block';
+      document.getElementById('modalCheckoutContent').style.display = 'none';
+    }
+  }
+
+  function closeModal() {
+    document.getElementById('modalOverlay').classList.remove('open');
+  }
+
+  function closeModalOutside(e) {
+    if (e.target === document.getElementById('modalOverlay')) closeModal();
+  }
+
+  function switchTab(btn, tab) {
+    document.querySelectorAll('.form-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tabLogin').style.display = tab === 'login' ? 'block' : 'none';
+    document.getElementById('tabCadastro').style.display = tab === 'cadastro' ? 'block' : 'none';
+  }
+
+  function goToDashboard() {
+    window.open('https://estacao-meteorologica.onrender.com', '_blank');
+  }
+
+  let cart = [];
+
+  function addToCart(btn, name, price, type) {
+    if (btn.classList.contains('added')) return;
+    btn.classList.add('added');
+    btn.textContent = '✓ ADICIONADO';
+    cart.push({ name, price, type });
+    renderCart();
+  }
+
+  function removeFromCart(idx) {
+    const item = cart[idx];
+    cart.splice(idx, 1);
+    renderCart();
+    document.querySelectorAll('.btn-add.added').forEach((btn) => {
+      const itemName = btn.closest('.loja-item').querySelector('.loja-item-name').textContent;
+      if (itemName === item.name) {
+        btn.classList.remove('added');
+        btn.textContent = '+ ADICIONAR';
+      }
+    });
+  }
+
+  function renderCart() {
+    const container = document.getElementById('cartItems');
+    const empty = document.getElementById('cartEmpty');
+    const badge = document.getElementById('cartBadge');
+    const totalEl = document.getElementById('cartTotal');
+    const mensalidadeEl = document.getElementById('cartMensalidade');
+    const mensalidadeValEl = document.getElementById('cartMensalidadeVal');
+    const btnCheckout = document.getElementById('btnCheckout');
+
+    badge.textContent = cart.length;
+    Array.from(container.querySelectorAll('.carrinho-item')).forEach(e => e.remove());
+
+    if (cart.length === 0) {
+      empty.style.display = 'block';
+      totalEl.textContent = 'R$ 0';
+      mensalidadeEl.style.display = 'none';
+      btnCheckout.disabled = true;
+      return;
+    }
+
+    empty.style.display = 'block' ? 'none' : 'none';
+    btnCheckout.disabled = false;
+
+    let totalHardware = 0;
+    let mensalidades = [];
+
+    cart.forEach((item, idx) => {
+      const div = document.createElement('div');
+      div.className = 'carrinho-item';
+      div.innerHTML = `<span class="carrinho-item-name">${item.name}</span><span class="carrinho-item-price">${item.price}</span><button class="carrinho-item-remove" onclick="removeFromCart(${idx})">✕</button>`;
+      container.appendChild(div);
+
+      if (item.type !== 'plano') {
+        const num = parseInt(item.price.replace(/[^\d]/g, ''));
+        totalHardware += num;
+      } else {
+        mensalidades.push(item.price);
+      }
+    });
+
+    totalEl.textContent = totalHardware > 0 ? `R$ ${totalHardware.toLocaleString('pt-BR')}` : 'R$ 0';
+
+    if (mensalidades.length > 0) {
+      mensalidadeEl.style.display = 'block';
+      mensalidadeValEl.textContent = `+ ${mensalidades.join(' + ')} (recorrente)`;
+    } else {
+      mensalidadeEl.style.display = 'none';
+    }
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
 </script>
 </body>
 </html>
